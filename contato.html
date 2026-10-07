@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contato de Estevam Robinson Dias Neto">
+    <title>Estevam Robinson | Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a class="logo" href="index.html">Estevam<span>.</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+            <nav id="mainNav" class="nav">
+                <a href="index.html">Sobre mim</a>
+                <a href="formacao.html">Formação</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a class="active" href="contato.html">Contato</a>
+                <button id="themeToggle" class="theme-btn" type="button" aria-label="Alternar tema">☾</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">CONTATO</p>
+                <h1>Vamos conversar?</h1>
+                <p>Envie uma mensagem utilizando o formulário abaixo.</p>
+            </div>
+        </section>
+
+        <section class="section container contact-layout">
+            <div class="contact-info">
+                <p class="eyebrow">FALE COMIGO</p>
+                <h2>Entre em contato</h2>
+                <p>Estou aberto a conhecer pessoas, trocar experiências e aprender sobre novas possibilidades na área de tecnologia.</p>
+                <div class="contact-detail">
+                    <span>✉</span>
+                    <div><strong>E-mail</strong><p>estevinhordiasneto@gmail.com</p></div>
+                </div>
+                <div class="contact-detail">
+                    <span>⌖</span>
+                    <div><strong>Localização</strong><p>Santa Filomena - Piauí</p></div>
+                </div>
+            </div>
+
+            <div class="card form-card">
+                <!-- O formulário é validado pelo JavaScript e seu envio é apenas simulado. -->
+                <form id="contactForm" novalidate>
+                    <div class="field">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                        <small class="error" id="nomeError"></small>
+                    </div>
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+                        <small class="error" id="emailError"></small>
+                    </div>
+                    <div class="field">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem"></textarea>
+                        <small class="error" id="mensagemError"></small>
+                    </div>
+                    <button class="btn primary full" type="submit">Enviar mensagem</button>
+                    <div id="formSuccess" class="success" role="status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container"><p>© 2026 Estevam Robinson Dias Neto · Portfólio pessoal</p></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
